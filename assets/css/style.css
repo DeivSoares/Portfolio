@@ -315,7 +315,7 @@ body main section.fourth-section div.content-contacts div.col-c{
     grid-area: C;
 }
 /*==================================================================RODAPÉ==================================================================*/
-body footer {
+body main footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -325,6 +325,11 @@ body footer {
     border-top: 1px solid white;
 }
 
-body footer img {
+body main footer img {
     width: 10rem;
+}
+
+body main footer p a{
+    text-decoration: none;
+    color: rgb(51, 67, 216);
 }
