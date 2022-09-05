@@ -23,6 +23,7 @@
 :root {
     --first-bg: rgb(32, 32, 32);
     --second-bg: lightslategray;
+    --third-bg: #464646;
     font-size: 62.5%;
 }
 
@@ -48,6 +49,7 @@ body main {
     width: 100%;
     height: 100%;
 }
+
 /*=============================================================NAVEGAÇÃO=============================================================*/
 body main nav {
     background-color: var(--second-bg);
@@ -70,10 +72,13 @@ body main nav ul li a {
     text-decoration: none;
     color: white;
 }
+
 /*=============================================================NAVEGAÇÃO MOBILE=============================================================*/
-body main nav.navbar-mobile-button, nav.mobile{
+body main nav.navbar-mobile-button,
+nav.mobile {
     display: none;
 }
+
 /*=============================================================CABEÇALHO=============================================================*/
 body main header {
     display: grid;
@@ -128,32 +133,51 @@ body main header div.col-a img {
         box-shadow: 0px 0px 12px 4px #ffffff6b;
     }
 }
+
 /*=======================================================PRIMEIRA SESSÃO[FORMAÇÃO]=======================================================*/
-body main section{
+body main section {
     width: 60%;
     margin: auto;
     margin-block: 2.5rem;
     text-align: center;
 }
 
-body main section h2{
+body main section h2 {
     margin-bottom: 2rem;
 }
 
 body main section p span {
     font-weight: bold;
 }
+
+body main section div.content-cv a button {
+    width: 12rem;
+    height: 3rem;
+    margin-top: 1.5rem;
+    border-radius: 8rem;
+    border: 1px solid black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+body main section div.content-cv a button:hover {
+    background-color: var(--third-bg);
+    color: white;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+
 /*=======================================================SEGUNDA SESSÃO[FORMAÇÃO]=======================================================*/
-body main section.second-section{
+body main section.second-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-body main section.second-section table{
+body main section.second-section table {
     width: 100%;
-    background-color: rgb(114, 114, 114);
+    background-color: #727272;
     border-collapse: collapse;
     animation: luzPiscando 2s infinite;
     color: white;
@@ -161,35 +185,37 @@ body main section.second-section table{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body main section.second-section table tr{
+body main section.second-section table tr {
     height: 3rem;
 }
 
-body main section.second-section table tr td,th{
+body main section.second-section table tr td,
+th {
     border: 1px solid black;
 
 }
 
-body main section.second-section table tbody tr:hover{
+body main section.second-section table tbody tr:hover {
     background-color: rgb(73, 73, 73);
     font-size: 1.7rem;
     transition: 0.5s;
 }
 
-body main section.second-section table tbody tr td a{
+body main section.second-section table tbody tr td a {
     text-decoration: none;
     color: white;
 }
 
-body main section.second-section table thead{
+body main section.second-section table thead {
     background-color: rgb(73, 73, 73);
 }
+
 /*=======================================================TERCEIRA SESSÃO[FORMAÇÃO]=======================================================*/
-body main section.third-section{
+body main section.third-section {
     width: 100%;
 }
 
-body main section.third-section div.content-boxes{
+body main section.third-section div.content-boxes {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -199,38 +225,39 @@ body main section.third-section div.content-boxes{
     width: 100%;
 }
 
-body main section.third-section div.content-boxes div.content-box-project{
+body main section.third-section div.content-boxes div.content-box-project {
     width: 30rem;
     height: 32rem;
     padding: 2rem;
-    background-color: #464646;
+    background-color: var(--third-bg);
     border-radius: 4rem;
     border: 1px solid white;
     box-shadow: 5px 5px 6px 5px #000000bd;
 }
 
-body main section.third-section div.content-boxes div.content-box-project:hover{
+body main section.third-section div.content-boxes div.content-box-project:hover {
     background-color: #383838;
     width: 32rem;
     box-shadow: 10px 10px 12px 10px #000000bd;
     transition: 1s;
 }
 
-body main section.third-section div.content-boxes div.content-box-project h3{
+body main section.third-section div.content-boxes div.content-box-project h3 {
     margin-bottom: 2rem;
 }
 
-body main section.third-section div.content-boxes div.content-box-project p{
+body main section.third-section div.content-boxes div.content-box-project p {
     margin-bottom: 2rem;
 }
 
-body main section.third-section div.content-boxes div.content-box-project img{
+body main section.third-section div.content-boxes div.content-box-project img {
     width: 100%;
     border-radius: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.308);
 }
+
 /*=======================================================QUARTA SESSÃO[FORMAÇÃO]=======================================================*/
-body main section.fourth-section div.content-contacts{
+body main section.fourth-section div.content-contacts {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -238,13 +265,13 @@ body main section.fourth-section div.content-contacts{
     grid-template-columns: 1fr 0fr 1fr;
     grid-template-areas: "A C B";
     padding: 2rem;
-    background-color: #464646;
+    background-color: var(--third-bg);
     border-radius: 4rem;
     border: 1px solid white;
     box-shadow: 5px 5px 6px 5px #000000bd;
 }
 
-body main section.fourth-section div.content-contacts div.col-a{
+body main section.fourth-section div.content-contacts div.col-a {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -253,7 +280,7 @@ body main section.fourth-section div.content-contacts div.col-a{
     grid-area: A;
 }
 
-body main section.fourth-section div.content-contacts div.col-a div.toMobile{
+body main section.fourth-section div.content-contacts div.col-a div.toMobile {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -261,11 +288,11 @@ body main section.fourth-section div.content-contacts div.col-a div.toMobile{
     gap: 1rem;
 }
 
-body main section.fourth-section div.content-contacts div.col-a div.toMobile h3{
+body main section.fourth-section div.content-contacts div.col-a div.toMobile h3 {
     margin-bottom: 1rem;
 }
 
-body main section.fourth-section div.content-contacts div.col-a div.toMobile div.contact-box{
+body main section.fourth-section div.content-contacts div.col-a div.toMobile div.contact-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -273,16 +300,16 @@ body main section.fourth-section div.content-contacts div.col-a div.toMobile div
     gap: 1rem;
 }
 
-body main section.fourth-section div.content-contacts div.col-a div.toMobile div img{
-width: 8rem;
+body main section.fourth-section div.content-contacts div.col-a div.toMobile div img {
+    width: 8rem;
 }
 
-body main section.fourth-section div.content-contacts div.col-a div.toMobile div a{
-text-decoration: none;
-color: white;
+body main section.fourth-section div.content-contacts div.col-a div.toMobile div a {
+    text-decoration: none;
+    color: white;
 }
 
-body main section.fourth-section div.content-contacts form{
+body main section.fourth-section div.content-contacts form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -290,35 +317,37 @@ body main section.fourth-section div.content-contacts form{
     grid-area: B;
 }
 
-body main section.fourth-section div.content-contacts form input{
+body main section.fourth-section div.content-contacts form input {
     width: 24rem;
     height: 2.5rem;
     margin-block: 1rem;
 }
 
-body main section.fourth-section div.content-contacts form textarea{
+body main section.fourth-section div.content-contacts form textarea {
     width: 45rem;
     border-radius: 2rem;
     padding: 1rem;
 }
 
-body main section.fourth-section div.content-contacts form input[type="submit"]{
+body main section.fourth-section div.content-contacts form input[type="submit"] {
     width: 10rem;
     margin-top: 1.5rem;
     border-radius: 8rem;
     border: 1px solid black;
+    cursor: pointer;
 }
 
-body main section.fourth-section div.content-contacts form input[type="submit"]:hover{
-    background-color: black;
+body main section.fourth-section div.content-contacts form input[type="submit"]:hover {
+    background-color: var(--third-bg);
     color: white;
     border: 1px solid white;
     transition: 0.5s;
 }
 
-body main section.fourth-section div.content-contacts div.col-c{
+body main section.fourth-section div.content-contacts div.col-c {
     grid-area: C;
 }
+
 /*==================================================================RODAPÉ==================================================================*/
 body main footer {
     display: flex;
@@ -334,7 +363,7 @@ body main footer img {
     width: 10rem;
 }
 
-body main footer p a{
+body main footer p a {
     text-decoration: none;
     color: rgb(51, 67, 216);
 }
