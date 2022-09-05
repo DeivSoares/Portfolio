@@ -1,0 +1,46 @@
+@media (max-width: 1024px) {
+    body main header {
+        grid-template-columns: 1fr;
+        grid-template-areas: "A"
+            "B";
+        padding: 2rem;
+    }
+
+    body main header div.col-a {
+        text-align: center;
+    }
+
+    body main section {
+        width: 90%;
+    }
+
+    body main section.fourth-section {
+        width: 95%;
+    }
+
+    body main section.fourth-section div.content-contacts {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "B"
+            "C"
+            "A";
+    }
+
+    body main section.fourth-section div.content-contacts div.col-a div.toMobile {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    body main section.fourth-section div.content-contacts form {
+        width: 100%;
+    }
+
+    body main section.fourth-section div.content-contacts form textarea {
+        width: 95%;
+    }
+}

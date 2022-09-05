@@ -1,0 +1,322 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+/*font-family: 'Handlee', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap');
+/*font-family: 'Oswald', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+/*font-family: 'Nunito', sans-serif;*/
+
+::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--second-bg);
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    border-radius: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--first-bg);
+}
+
+:root {
+    --first-bg: rgb(32, 32, 32);
+    --second-bg: lightslategray;
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--first-bg);
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body main {
+    width: 100%;
+    height: 100%;
+}
+/*=============================================================NAVEGAÇÃO=============================================================*/
+body main nav {
+    background-color: var(--second-bg);
+    border-bottom: 1px solid white;
+    height: 5rem;
+}
+
+body main nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    list-style-type: none;
+    font-size: 1.6rem;
+    height: 100%;
+}
+
+body main nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+/*=============================================================CABEÇALHO=============================================================*/
+body main header {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    grid-template-columns: 0fr 1fr;
+    grid-template-areas: "A B";
+    width: 100%;
+    padding: 3rem;
+
+}
+
+body main header div.col-a {
+    grid-area: A;
+}
+
+body main header div.col-b {
+    grid-area: B;
+    font-family: 'Handlee', cursive;
+}
+
+body main header div.col-b h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+body main header div.col-b div.about p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+
+body main header div.col-a img {
+    width: 20rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: 0px 0px 12px 4px #ffffff6b;
+    animation: luzPiscando 2s infinite;
+}
+
+@keyframes luzPiscando {
+    0% {
+        box-shadow: 0px 0px 12px 4px #ffffff6b;
+    }
+
+    50% {
+        box-shadow: 0px 0px 12px 4px white;
+    }
+
+    100% {
+        box-shadow: 0px 0px 12px 4px #ffffff6b;
+    }
+}
+/*=======================================================PRIMEIRA SESSÃO[FORMAÇÃO]=======================================================*/
+body main section{
+    width: 60%;
+    margin: auto;
+    margin-block: 2.5rem;
+    text-align: center;
+}
+
+body main section h2{
+    margin-bottom: 2rem;
+}
+
+body main section p span {
+    font-weight: bold;
+}
+/*=======================================================SEGUNDA SESSÃO[FORMAÇÃO]=======================================================*/
+body main section.second-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body main section.second-section table{
+    width: 100%;
+    background-color: rgb(114, 114, 114);
+    border-collapse: collapse;
+    animation: luzPiscando 2s infinite;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body main section.second-section table tr{
+    height: 3rem;
+}
+
+body main section.second-section table tr td,th{
+    border: 1px solid black;
+
+}
+
+body main section.second-section table tbody tr:hover{
+    background-color: rgb(73, 73, 73);
+    font-size: 1.7rem;
+    transition: 0.5s;
+}
+
+body main section.second-section table tbody tr td a{
+    text-decoration: none;
+    color: white;
+}
+
+body main section.second-section table thead{
+    background-color: rgb(73, 73, 73);
+}
+/*=======================================================TERCEIRA SESSÃO[FORMAÇÃO]=======================================================*/
+body main section.third-section{
+    width: 100%;
+}
+
+body main section.third-section div.content-boxes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+    width: 100%;
+}
+
+body main section.third-section div.content-boxes div.content-box-project{
+    width: 30rem;
+    height: 32rem;
+    padding: 2rem;
+    background-color: #464646;
+    border-radius: 4rem;
+    border: 1px solid white;
+    box-shadow: 5px 5px 6px 5px #000000bd;
+}
+
+body main section.third-section div.content-boxes div.content-box-project:hover{
+    background-color: #383838;
+    width: 32rem;
+    box-shadow: 10px 10px 12px 10px #000000bd;
+    transition: 1s;
+}
+
+body main section.third-section div.content-boxes div.content-box-project h3{
+    margin-bottom: 2rem;
+}
+
+body main section.third-section div.content-boxes div.content-box-project p{
+    margin-bottom: 2rem;
+}
+
+body main section.third-section div.content-boxes div.content-box-project img{
+    width: 100%;
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.308);
+}
+/*=======================================================QUARTA SESSÃO[FORMAÇÃO]=======================================================*/
+body main section.fourth-section div.content-contacts{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    grid-template-columns: 1fr 0fr 1fr;
+    grid-template-areas: "A C B";
+    padding: 2rem;
+    background-color: #464646;
+    border-radius: 4rem;
+    border: 1px solid white;
+    box-shadow: 5px 5px 6px 5px #000000bd;
+}
+
+body main section.fourth-section div.content-contacts div.col-a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    grid-area: A;
+}
+
+body main section.fourth-section div.content-contacts div.col-a h3{
+    margin-bottom: 1rem;
+}
+
+body main section.fourth-section div.content-contacts div.col-a div.contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+body main section.fourth-section div.content-contacts div.col-a div img{
+width: 8rem;
+}
+
+body main section.fourth-section div.content-contacts div.col-a div a{
+text-decoration: none;
+color: white;
+}
+
+body main section.fourth-section div.content-contacts form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: B;
+}
+
+body main section.fourth-section div.content-contacts form input{
+    width: 24rem;
+    height: 2.5rem;
+    margin-block: 1rem;
+}
+
+body main section.fourth-section div.content-contacts form textarea{
+    width: 45rem;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+body main section.fourth-section div.content-contacts form input[type="submit"]{
+    width: 10rem;
+    margin-top: 1.5rem;
+    border-radius: 8rem;
+    border: 1px solid black;
+}
+
+body main section.fourth-section div.content-contacts form input[type="submit"]:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+
+body main section.fourth-section div.content-contacts div.col-c{
+    grid-area: C;
+}
+/*==================================================================RODAPÉ==================================================================*/
+body footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: var(--second-bg);
+    border-top: 1px solid white;
+}
+
+body footer img {
+    width: 10rem;
+}
