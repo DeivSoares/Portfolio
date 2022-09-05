@@ -1,4 +1,56 @@
 @media (max-width: 1024px) {
+    body main nav {
+        display: none;
+    }
+
+    body main nav.navbar-mobile-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body main nav.navbar-mobile-button button {
+        background: none;
+        border: none;
+    }
+
+    body main nav.navbar-mobile-button button svg path {
+        stroke: white;
+    }
+
+    body main nav.mobile {
+        display: none;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        animation: comeToTop 1s;
+    }
+
+    @keyframes comeToTop {
+        0% {
+            top: 100%;
+        }
+
+        100% {
+            top: 0;
+        }
+
+
+    }
+
+    body main nav.mobile ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        font-size: 3rem;
+    }
+
     body main header {
         grid-template-columns: 1fr;
         grid-template-areas: "A"

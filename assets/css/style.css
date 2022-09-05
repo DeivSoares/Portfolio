@@ -70,6 +70,10 @@ body main nav ul li a {
     text-decoration: none;
     color: white;
 }
+/*=============================================================NAVEGAÇÃO MOBILE=============================================================*/
+body main nav.navbar-mobile-button, nav.mobile{
+    display: none;
+}
 /*=============================================================CABEÇALHO=============================================================*/
 body main header {
     display: grid;
