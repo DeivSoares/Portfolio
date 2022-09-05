@@ -92,6 +92,7 @@ body main header div.col-a {
 }
 
 body main header div.col-b {
+    width: 80%;
     grid-area: B;
     font-family: 'Handlee', cursive;
 }
