@@ -248,11 +248,7 @@ body main section.fourth-section div.content-contacts div.col-a{
     grid-area: A;
 }
 
-body main section.fourth-section div.content-contacts div.col-a h3{
-    margin-bottom: 1rem;
-}
-
-body main section.fourth-section div.content-contacts div.col-a div.contact-box{
+body main section.fourth-section div.content-contacts div.col-a div.toMobile{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -260,11 +256,23 @@ body main section.fourth-section div.content-contacts div.col-a div.contact-box{
     gap: 1rem;
 }
 
-body main section.fourth-section div.content-contacts div.col-a div img{
+body main section.fourth-section div.content-contacts div.col-a div.toMobile h3{
+    margin-bottom: 1rem;
+}
+
+body main section.fourth-section div.content-contacts div.col-a div.toMobile div.contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+body main section.fourth-section div.content-contacts div.col-a div.toMobile div img{
 width: 8rem;
 }
 
-body main section.fourth-section div.content-contacts div.col-a div a{
+body main section.fourth-section div.content-contacts div.col-a div.toMobile div a{
 text-decoration: none;
 color: white;
 }
