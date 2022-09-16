@@ -1,8 +1,8 @@
-# NLW-eSports - Trilha Explorer
+# Seja muito bem vindo ao repositório do meu Portfolio!
 
 ![preview](./.github/preview.png)
  
- Projeto construído do evento Next Level Week da Rocketseat
+ Projeto desenvolvido por mim mesmo para mostrar o meu portfolio e minhas habilidades em desenvolvimento web
 
  [🔗Clique aqui para acessar](https://deivsoares.github.io/Portfolio/)
 
