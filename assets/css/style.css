@@ -196,7 +196,7 @@ th {
 
 body main section.second-section table tbody tr:hover {
     background-color: rgb(73, 73, 73);
-    font-size: 1.7rem;
+    /* font-size: 1.7rem; */
     transition: 0.5s;
 }
 
