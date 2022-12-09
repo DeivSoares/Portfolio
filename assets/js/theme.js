@@ -1,6 +1,11 @@
 let themebutton = document.getElementById('themebutton')
+let thememobilebutton = document.getElementById('thememobilebutton')
+let lampada = document.getElementById('lampada')
+let lampadamobile = document.getElementById('lampadamobile')
+
 window.onload = function(){
     themebutton.setAttribute("onclick", "LightMode()")
+    thememobilebutton.setAttribute("onclick", "LightMode()")
 }
 
 
@@ -30,12 +35,15 @@ function LightMode() {
     document.documentElement.style.setProperty('--namefooter', roots[6])
 
     themebutton.setAttribute('onclick', "DarkMode()")
+    thememobilebutton.setAttribute('onclick', "DarkMode()")
+    lampada.setAttribute("src","assets/images/lampada-apagada.svg")
+    lampadamobile.setAttribute("src","assets/images/lampada-apagada.svg")
 }
 
 function DarkMode() {
     let roots = [
         firstLightBg = '#202020',
-        secondtLightBg = '#lightslategray',
+        secondtLightBg = 'lightslategray',
         thirdLightBg = '#464646',
         fontLightColor = 'white',
         tableBg = '#727272',
@@ -58,4 +66,7 @@ function DarkMode() {
     document.documentElement.style.setProperty('--namefooter', roots[6])
 
     themebutton.setAttribute('onclick', "LightMode()")
+    thememobilebutton.setAttribute('onclick', "LightMode()")
+    lampada.setAttribute("src","assets/images/lampada-acesa.svg")
+    lampadamobile.setAttribute("src","assets/images/lampada-acesa.svg")
 }

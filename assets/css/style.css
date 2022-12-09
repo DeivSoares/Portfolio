@@ -84,7 +84,17 @@ body main nav ul li button {
     font-family: 'Oswald', sans-serif;
     font-size: 1.6rem;
     cursor: pointer;
+
+    position: absolute;
+    top: 10%;
+    left: 90%;
 }
+
+body main nav ul li button img {
+    width: 6rem;
+}
+
+
 
 /*=============================================================NAVEGAÇÃO MOBILE=============================================================*/
 body main nav.navbar-mobile-button,
