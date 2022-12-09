@@ -51,6 +51,11 @@
         font-size: 3rem;
     }
 
+    body main nav ul li button {
+        top: 8%;
+        left: 80%;
+    }
+
     body main header {
         grid-template-columns: 1fr;
         grid-template-areas: "A"
