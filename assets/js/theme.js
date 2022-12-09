@@ -1,5 +1,5 @@
+let themebutton = document.getElementById('themebutton')
 window.onload = function(){
-    let themebutton = document.getElementById('themebutton')
     themebutton.setAttribute("onclick", "LightMode()")
 }
 
