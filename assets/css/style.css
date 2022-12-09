@@ -19,10 +19,14 @@
 }
 
 :root {
-    --first-bg: rgb(32, 32, 32);
+    --first-bg: #202020;
     --second-bg: lightslategray;
     --third-bg: #464646;
+    --font-color: white;
     font-size: 62.5%;
+    --table: #727272;
+    --tablehead: #494949;
+    --namefooter: #3343d8;
 }
 
 * {
@@ -36,12 +40,13 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: var(--first-bg);
-    color: white;
+    color: var(--font-color);
     font-family: 'Oswald', sans-serif;
     /* font-family: 'Nunito', sans-serif; */
     font-size: 1.6rem;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    transition: 1s;
 }
 
 body main {
@@ -70,6 +75,15 @@ body main nav ul {
 body main nav ul li a {
     text-decoration: none;
     color: white;
+}
+
+body main nav ul li button {
+    background: none;
+    border: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    cursor: pointer;
 }
 
 /*=============================================================NAVEGAÇÃO MOBILE=============================================================*/
@@ -125,7 +139,7 @@ body main header div.col-a img {
     }
 
     50% {
-        box-shadow: 0px 0px 12px 4px white;
+        box-shadow: 0px 0px 12px 4px var(--second-bg);
     }
 
     100% {
@@ -161,8 +175,8 @@ body main section div.content-cv a button {
 
 body main section div.content-cv a button:hover {
     background-color: var(--third-bg);
-    color: white;
-    border: 1px solid white;
+    color: var(--font-color);
+    border: 1px solid var(--font-color);
     transition: 0.5s;
 }
 
@@ -176,10 +190,10 @@ body main section.second-section {
 
 body main section.second-section table {
     width: 100%;
-    background-color: #727272;
+    background-color: var(--table);
     border-collapse: collapse;
     animation: luzPiscando 2s infinite;
-    color: white;
+    color: var(--font-color);
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -195,18 +209,18 @@ th {
 }
 
 body main section.second-section table tbody tr:hover {
-    background-color: rgb(73, 73, 73);
+    background-color: var(--tablehead);
     /* font-size: 1.7rem; */
     transition: 0.5s;
 }
 
 body main section.second-section table tbody tr td a {
     text-decoration: none;
-    color: white;
+    color: var(--font-color);
 }
 
 body main section.second-section table thead {
-    background-color: rgb(73, 73, 73);
+    background-color: var(--tablehead);
 }
 
 /*=======================================================TERCEIRA SESSÃO[FORMAÇÃO]=======================================================*/
@@ -237,6 +251,7 @@ body main section.third-section div.content-boxes div.content-box-project {
 
 body main section.third-section div.content-boxes div.content-box-project:hover {
     background-color: #383838;
+    color: white;
     width: 32rem;
     box-shadow: 10px 10px 12px 10px #000000bd;
     transition: 1s;
@@ -307,7 +322,7 @@ body main section.fourth-section div.content-contacts div.col-a div.toMobile div
 
 body main section.fourth-section div.content-contacts div.col-a div.toMobile div a {
     text-decoration: none;
-    color: white;
+    color: var(--font-color);
 }
 
 body main section.fourth-section div.content-contacts form {
@@ -366,5 +381,5 @@ body main footer img {
 
 body main footer p a {
     text-decoration: none;
-    color: rgb(51, 67, 216);
+    color: var(--namefooter);
 }
