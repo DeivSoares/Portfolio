@@ -94,6 +94,10 @@ body main nav ul li button img {
     width: 6rem;
 }
 
+body main nav ul li button img:hover {
+    filter: brightness(190%);
+}
+
 
 
 /*=============================================================NAVEGAÇÃO MOBILE=============================================================*/
