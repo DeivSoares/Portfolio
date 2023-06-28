@@ -1,0 +1,48 @@
+::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--second-bg);
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    border-radius: 0.8rem;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--first-bg);
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+a {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+body section div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+body section div:nth-child(3) div div:first-child,
+body section div:nth-child(3) div div:first-child div,
+body section div:nth-child(3) div div:nth-child(2) {
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+body section div:nth-child(3) div div:first-child {
+  width: 50rem;
+}
+body section div:nth-child(3) div div:nth-child(2) {
+  width: 20rem;
+}

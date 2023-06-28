@@ -1,11 +1,10 @@
-let themebutton = document.getElementById('themebutton')
-let thememobilebutton = document.getElementById('thememobilebutton')
-let lampada = document.getElementById('lampada')
-let lampadamobile = document.getElementById('lampadamobile')
+let themebutton = document.querySelectorAll('button.theme')
+let lampada = document.querySelectorAll('img.lampada')
 
-window.onload = function(){
-    themebutton.setAttribute("onclick", "LightMode()")
-    thememobilebutton.setAttribute("onclick", "LightMode()")
+window.onload = function () {
+    for (let i = 0; i <= themebutton.length; i++) {
+        themebutton[i].setAttribute("onclick", "LightMode()")
+    }
 }
 
 
@@ -34,10 +33,8 @@ function LightMode() {
 
     document.documentElement.style.setProperty('--namefooter', roots[6])
 
-    themebutton.setAttribute('onclick', "DarkMode()")
-    thememobilebutton.setAttribute('onclick', "DarkMode()")
-    lampada.setAttribute("src","assets/images/lampada-apagada.svg")
-    lampadamobile.setAttribute("src","assets/images/lampada-apagada.svg")
+
+    ChangeTheme();
 }
 
 function DarkMode() {
@@ -50,7 +47,7 @@ function DarkMode() {
         tableHead = '#494949',
         nameFooter = '#3343d8'
     ]
-    
+
     document.documentElement.style.setProperty('--first-bg', roots[0])
 
     document.documentElement.style.setProperty('--second-bg', roots[1])
@@ -65,8 +62,19 @@ function DarkMode() {
 
     document.documentElement.style.setProperty('--namefooter', roots[6])
 
-    themebutton.setAttribute('onclick', "LightMode()")
-    thememobilebutton.setAttribute('onclick', "LightMode()")
-    lampada.setAttribute("src","assets/images/lampada-acesa.svg")
-    lampadamobile.setAttribute("src","assets/images/lampada-acesa.svg")
+    ChangeTheme();
+}
+
+function ChangeTheme() {
+    for (let count = 0; count <= themebutton.length; count++) {
+        let target = themebutton[count].getAttribute('onclick')
+        if (target == 'DarkMode()') {
+            themebutton[count].setAttribute('onclick', "LightMode()")
+            lampada[count].setAttribute("src", "src/images/lampada-acesa.svg")
+        } else {
+            themebutton[count].setAttribute('onclick', "DarkMode()")
+            lampada[count].setAttribute("src", "src/images/lampada-apagada.svg")
+            
+        }
+    }
 }

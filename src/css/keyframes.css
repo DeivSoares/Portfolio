@@ -1,0 +1,11 @@
+@keyframes luzPiscando {
+  0% {
+    box-shadow: 0px 0px 12px 4px #ffffff6b;
+  }
+  50% {
+    box-shadow: 0px 0px 12px 4px var(--second-bg);
+  }
+  100% {
+    box-shadow: 0px 0px 12px 4px #ffffff6b;
+  }
+}

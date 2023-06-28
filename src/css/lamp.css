@@ -1,0 +1,17 @@
+button.theme {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10%;
+    left: 90%;
+}
+
+img.lampada {
+  width: 6rem;
+}
+
+img.lampada:hover{
+  filter: brightness(190%);
+}
+

@@ -1,0 +1,86 @@
+@media (min-width: 0) and (max-width: 768px) {
+  body nav {
+    display: none;
+  }
+
+  body nav.navbar-mobile-button {
+    display: block;
+    text-align: center;
+  }
+
+  body nav.navbar-mobile-button button {
+    border: none;
+    background: none;
+  }
+
+  body nav.navbar-mobile-button button svg path {
+    stroke: white;
+  }
+
+  body header {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  body header div.about {
+    width: 90%;
+    gap: 2rem;
+  }
+
+  body section {
+    gap: 5rem;
+  }
+
+  body section div:nth-child(1) {
+    width: 90%;
+  }
+
+  body section div:nth-child(3) div {
+    width: 90%;
+    flex-direction: column-reverse;
+    gap: 0.4rem;
+  }
+
+  body section div:nth-child(3) div div:first-child {
+    flex-direction: row;
+  }
+  body section div:nth-child(3) div div:first-child h3 {
+    display: none;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  form textarea {
+    width: 100%;
+  }
+
+  div.flexlist-div.opened {
+    display: flex;
+    animation: comeToTop 1s forwards;
+  }
+
+  @keyframes comeToTop {
+    0% {
+      top: 100%;
+    }
+    100% {
+      top: 0;
+    }
+  }
+
+  div.flexlist-div.opened ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    font-size: 3rem;
+    width: 30%;
+  }
+
+  button.theme{
+    top: 8%;
+    left: 80%;
+  }
+}

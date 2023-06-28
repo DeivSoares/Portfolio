@@ -1,0 +1,10 @@
+:root {
+  --first-bg: #202020;
+  --second-bg: lightslategray;
+  --third-bg: #464646;
+  --font-color: white;
+  font-size: 62.5%;
+  --table: #727272;
+  --tablehead: #494949;
+  --namefooter: #3343d8;
+}

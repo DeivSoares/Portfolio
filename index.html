@@ -9,88 +9,69 @@
     <meta name="description" content="Seja muito bem vindo ao meu Portfólio, espero que goste!">
     <meta name="copyright" content="© 2022 Deivison Soares">
     <meta name="keywords" content="Portfolio, desenvolvimento, devs, frontend">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/style-responsive.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/imports.css">
+    <link rel="stylesheet" href="src/css/root.css">
+    <link rel="stylesheet" href="src/css/lamp.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/style-responsive.css">
+    <link rel="stylesheet" href="src/css/keyframes.css">
     <link rel="shortcut icon" href="https://github.githubassets.com/favicons/favicon-dark.png" type="image/x-icon">
     <title>Deivison Soares - Portfólio</title>
 </head>
 
 <body>
-    <main id="home">
-        <nav>
-            <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#training">Cursos</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contacts">Contato</a></li>
-                <li>
-                    <button id="themebutton">
-                        <img id="lampada" src="assets/images/lampada-acesa.svg" alt="">
-                    </button>
-                </li>
-            </ul>
-        </nav>
-        <nav id="navbar-mobile-button" class="navbar-mobile-button">
-            <button id="menu-button">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round"></path>
-                    <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round"></path>
-                    <path d="M18 28L30 28" stroke="#00856F" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round"></path>
-                </svg>
-            </button>
-        </nav>
-        <nav id="mobile" class="mobile">
-            <h1>MENU</h1>
-            <ul id="flexlist-mobile">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#training">Cursos</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contacts">Contato</a></li>
-                <li>
-                    <button id="thememobilebutton">
-                        <img id="lampadamobile" src="assets/images/lampada-acesa.svg" alt="">
-                    </button>
-                </li>
-            </ul>
-        </nav>
+    <nav id="nav">
+        <ul>
+            <li><a href="#nav">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#ctt">Contato</a></li>
+            <li>
+                <button class="theme" onclick="LightMode()">
+                    <img class="lampada" src="src/images/lampada-acesa.svg" alt="">
+                </button>
+            </li>
+        </ul>
+    </nav>
+    <nav class="navbar-mobile-button">
+        <button class="btn-menu">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M18 28L30 28" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </button>
+    </nav>
+    <header id="sobre">
+        <div>
+            <img src="src/images/10.jpg" alt="">
+        </div>
 
-        <header>
-            <div class="col-a">
-                <img src="assets/images/10.jpg"
-                    alt="Esse na foto sou eu com blusa preta e branca e com sorriso no rosto">
+        <div class="about">
+            <div>
+                <h1>Seja muito bem vindo ao meu Portfólio</h1>
+                <p>Olá, sou Deivison Soares e sou morador da Região dos Lagos - RJ. Atualmente, estou cursando o
+                    Terceiro Período do curso de Análise e Desenvolvimento de Sistemas fornecidos pela UVA -
+                    Universidade Veiga de Almeida.</p>
             </div>
-
-            <div class="col-b">
-                <h1>Seja muito bem vindo ao meu Portfólio!</h1>
-                <div id="about" class="about">
-                    <p>Olá, sou Deivison Soares e sou morador da Região dos Lagos - RJ. Atualmente, estou cursando o
-                        Terceiro Período do curso de Análise e Desenvolvimento de Sistemas fornecidos pela UVA -
-                        Universidade Veiga de Almeida.</em></p>
+            <div>
+                <h2>Objetivos</h2>
+                <p>O meu propósito é obter o tão esperado primeiro emprego e nele adquirir experiências desafiadoras
+                    neste ramo em que escolhi me profissionalizar; Desenvolvedor Front-End, comprometendo-me com as
+                    atribuições que serão me direcionados e sempre oferecendo o meu melhor serviço.</p>
+                <div>
+                    <a href="src/docs/CV Deivison Soares.pdf" download="CV Deivison Soares.pdf"><button>Download
+                            CV</button></a>
                 </div>
             </div>
-        </header>
-        <section>
-            <h2>Objetivos</h2>
-            <p>
-                O meu propósito é obter o tão esperado primeiro emprego e nele adquirir experiências desafiadoras neste
-                ramo em que escolhi me profissionalizar; <span>Desenvolvedor Front-End</span>, comprometendo-me com as
-                atribuições que serão me direcionados e sempre oferecendo o meu melhor serviço.
-            </p>
-            <div class="content-cv">
-                <a href="assets/docs/CV Deivison Soares.pdf"
-                    download="CV Deivison Soares.pdf"><button>Download CV</button></a>
-            </div>
-        </section>
-        <section id="training" class="second-section">
+        </div>
+    </header>
+    <section>
+        <div id="cursos">
             <h2>Meus Cursos</h2>
-
             <table>
-
                 <thead>
                     <tr>
                         <th>Cursos</th>
@@ -98,7 +79,6 @@
                         <th>Formação</th>
                     </tr>
                 </thead>
-
                 <tbody>
                     <tr>
                         <td><a href="https://drive.google.com/file/d/16DLcvOwNlsC1vWDsOfgVFOS0WXvLO9mJ/view?usp=share_link"
@@ -106,105 +86,84 @@
                         <td>Oracle Next Education - ONE</td>
                         <td>04/23</td>
                     </tr>
-
                     <tr>
                         <td><a href="https://drive.google.com/file/d/1ut3YCBARWGVAQntR_a77xPLiKHxDmx0F/view?usp=share_link"
                                 target="_blank">Dominando funções em JavaScript</a></td>
                         <td>Digital Innovation One</td>
                         <td>09/22</td>
                     </tr>
-
                     <tr>
                         <td><a href="https://drive.google.com/file/d/1srVV-RtrTtHzoxv6fPllK96_W_GLszco/view?usp=share_link"
                                 target="_blank">Variáveis e Tipos com JavaScript</a></td>
                         <td>Digital Innovation One</td>
                         <td>09/22</td>
                     </tr>
-
                     <tr>
                         <td><a href="https://drive.google.com/file/d/1JdEXEGZ8Gvhbp3Kp551vPG-x22982wsk/view?usp=share_link"
                                 target="_blank">Sintaxe e Operadores JavaScript</a></td>
                         <td>Digital Innovation One</td>
                         <td>09/22</td>
                     </tr>
-
                     <tr>
                         <td><a href="https://drive.google.com/file/d/1_RUdQOfBIuZUHNK0qBjjwJKwp5eTANDt/view?usp=share_link"
                                 target="_blank">Sintaxe Básica em JavaScript</a></td>
                         <td>Digital Innovation One</td>
                         <td>09/22</td>
                     </tr>
-
                     <tr>
                         <td><a href="https://drive.google.com/file/d/1rSifT6EeIRJKCaQ7Wc8cV75yC4FryHkk/view?usp=share_link"
                                 target="_blank">Introdução ao JavaScript</a></td>
                         <td>Digital Innovation One</td>
                         <td>08/22</td>
                     </tr>
-
                     <tr>
                         <td><a href="https://drive.google.com/file/d/1hfDRZhaa7DxQJLx9ptf8wMlgI3vbae27/view?usp=share_link"
                                 target="_blank">Lógica de Programação Essencial</a></td>
                         <td>Digital Innovation One</td>
                         <td>08/22</td>
                     </tr>
-
-                    <!-- <tr>
-                        <td><a href="#" target="_blank">HTML5, CSS3 e JavaScript</a></td>
-                        <td>Curso em Video</td>
-                        <td>(01/01) - Pegar Certificado</td>
-                    </tr> -->
-
                     <tr>
                         <td><a href="https://drive.google.com/file/d/10rVtg6FnGJnszUxSalBVRZ25LLmtshwU/view?usp=share_link"
                                 target="_blank">HTML, CSS e Bootstrap</a></td>
                         <td>Udemy</td>
                         <td>10/21</td>
                     </tr>
-
                     <tr>
                         <td><a href="https://drive.google.com/file/d/1Pl4XBFWegLtfLX3sz58OgD6jgfO9JhPm/view?usp=share_link"
                                 target="_blank">JavaScript Basic to Advanced</a></td>
                         <td>Udemy</td>
                         <td>10/21</td>
                     </tr>
-
                     <tr>
                         <td><a href="https://drive.google.com/file/d/1H_c6GSIE3EgfDJkUQSeZmWcNG1rOH7tb/view?usp=share_link"
                                 target="_blank">The Complete Full-Stack JavaScript</a></td>
                         <td>Udemy</td>
                         <td>10/21</td>
                     </tr>
-
                     <tr>
                         <td><a href="https://drive.google.com/file/d/1PasKrHrlp-R-YbkVjWxrZ5kX_FZUqiDc/view?usp=share_link"
                                 target="_blank">Lógica de Programação</a></td>
                         <td>Microlins</td>
                         <td>10/21</td>
                     </tr>
-
                     <tr>
                         <td><a href="https://drive.google.com/file/d/1PasKrHrlp-R-YbkVjWxrZ5kX_FZUqiDc/view?usp=share_link"
                                 target="_blank">Programacão C#</a></td>
                         <td>Microlins</td>
                         <td>10/21</td>
                     </tr>
-
                     <tr>
                         <td><a href="https://drive.google.com/file/d/1PasKrHrlp-R-YbkVjWxrZ5kX_FZUqiDc/view?usp=share_link"
                                 target="_blank">Banco de Dados SQL</a></td>
                         <td>Microlins</td>
                         <td>10/21</td>
                     </tr>
-
-
                     <tr>
                         <td><a href="https://drive.google.com/file/d/1PasKrHrlp-R-YbkVjWxrZ5kX_FZUqiDc/view?usp=share_link"
                                 target="_blank">Pacote Office</a></td>
                         <td>Microlins</td>
                         <td>10/21</td>
                     </tr>
-
                     <tr>
                         <td><a href="https://drive.google.com/file/d/1PasKrHrlp-R-YbkVjWxrZ5kX_FZUqiDc/view?usp=share_link"
                                 target="_blank">Excel</a></td>
@@ -212,107 +171,104 @@
                         <td>10/21</td>
                     </tr>
                 </tbody>
-
                 <tfoot>
                     <tr>
                         <th colspan="3">Clique nas células da coluna "Cursos" para verificar os certificados</th>
                     </tr>
                 </tfoot>
             </table>
-        </section>
-        <section id="projects" class="third-section">
-            <h2>Meus Projetos</h2>
-            <div class="content-boxes">
-
-                <div class="content-box-project">
+        </div>
+        <div id="projetos">
+            <h2>Projetos</h2>
+            <div class="container">
+                <div class="box-project">
                     <h3>Decodificador de Texto</h3>
-                    <p> Projeto desenvolvido durante o curso da Oracle;<br><strong><em>Obs: Em desenvolvimento</em></strong></p>
+                    <p>Projeto desenvolvido durante o curso da Oracle;
+                        <br>
+                        <strong><em>Obs: Site Responsivo</em></strong>
+                    </p>
                     <a href="https://deivsoares.github.io/Challange/" target="_blank"><img
-                            src="assets/images/decodificador.png" alt="Projeto Decodificador de Texto"></a>
+                            src="src/images/decodificador.png" alt="Projeto Decodificador de Texto"></a>
                 </div>
-                <div class="content-box-project">
+                <div class="box-project">
                     <h3>Relógio Digital</h3>
                     <p> Relogio Digital em tempo real;<br><strong><em>Obs: Site Responsivo</em></strong></p>
                     <a href="https://deivsoares.github.io/Relogio-Digital/" target="_blank"><img
-                            src="assets/images/relogio-digital.png" alt="Projeto Relógio Digital"></a>
+                            src="src/images/relogio-digital.png" alt="Projeto Relógio Digital"></a>
                 </div>
-
-                <div class="content-box-project">
+                <div class="box-project">
                     <h3>Site com Login e Registro</h3>
-                    <p> Projeto desenvolvido apenas para fixar o aprendizado;<br><strong><em>Obs: Site não Responsivo</em></strong></p>
+                    <p> Projeto desenvolvido apenas para fixar o aprendizado;<br><strong><em>Obs: Site não
+                                Responsivo</em></strong></p>
                     <a href="https://deivsoares.github.io/website-w-login/" target="_blank"><img
-                            src="assets/images/Site com login e registro.png" alt="Projeto Site com Login e Registro"></a>
+                            src="src/images/Site com login e registro.png" alt="Projeto Site com Login e Registro"></a>
                 </div>
-
-                <div class="content-box-project">
+                <div class="box-project">
                     <h3>The Last of Us - Série</h3>
-                    <p>Projeto desenvolvido durante o evento do Zero ao Programador Contratado - Devemdobro<br><strong><em>Obs: Site
+                    <p>Projeto desenvolvido durante o evento do Zero ao Programador Contratado -
+                        Devemdobro<br><strong><em>Obs: Site
                                 Responsivo</em></strong></p>
                     <a href="https://deivsoares.github.io/the-last-of-us/" target="_blank"><img
-                            src="assets/images/deivsoares.github.io_the-last-of-us_ (2).png" alt="Projeto The Last of Us - Série"></a>
+                            src="src/images/deivsoares.github.io_the-last-of-us_ (2).png"
+                            alt="Projeto The Last of Us - Série"></a>
                 </div>
-
-                <div class="content-box-project">
+                <div class="box-project">
                     <h3>NLW eSports</h3>
                     <p>Projeto desenvolvido durante o evento NLW eSports da RocketSeat<br><strong><em>Obs: Site
                                 Responsivo</em></strong></p>
                     <a href="https://deivsoares.github.io/NLW-eSports/" target="_blank"><img
-                            src="assets/images/preview2.png" alt="Meu Portfólio"></a>
+                            src="src/images/preview2.png" alt="Meu Portfólio"></a>
                 </div>
-
-                <div class="content-box-project">
+                <div class="box-project">
                     <h3>Portfólio</h3>
                     <p>Esse projeto trata-se do meu portfólio<br><strong><em>Obs: Site Responsivo</em></strong></p>
                     <a href="https://deivsoares.github.io/Portfolio/index.html" target="_blank"><img
-                            src="assets/images/MeuPortfólio.png" alt="Meu Portfólio"></a>
+                            src="src/images/MeuPortfólio.png" alt="Meu Portfólio"></a>
                 </div>
-
-                <div class="content-box-project">
+                <div class="box-project">
                     <h3>Elemental Wiki</h3>
-                    <p>Esse é um projeto interno que desenvolvi para o Elemental Priston Tale!<br><strong><em>Obs: Site
-                                Responsivo</em></strong></p>
+                    <p>Esse é um projeto interno que desenvolvi para o Elemental Priston Tale!<br><strong><em>Obs:
+                                Site</em></strong></p>
                     <a href="https://deivsoares.github.io/Wiki/" target="_blank"><img
-                            src="assets/images/Elemental Wiki.png" alt="Site Elemental Priston Tale(Aba Wiki)"></a>
+                            src="src/images/Elemental Wiki.png" alt="Site Elemental Priston Tale(Aba Wiki)"></a>
                 </div>
-
-                <div class="content-box-project">
+                <div class="box-project">
                     <h3>DoctorCare</h3>
                     <p>Participei da NLW-Return e sai com um projeto maravilhoso!<br><strong><em>Obs: Site
                                 Responsivo</em></strong></p>
                     <a href="https://deivsoares.github.io/NLW-Return/index.html" target="_blank"><img
-                            src="assets/images/NLW-Return.png" alt="Site da DoctorCare"></a>
+                            src="src/images/NLW-Return.png" alt="Site da DoctorCare"></a>
                 </div>
             </div>
-        </section>
-        <section id="contacts" class="fourth-section">
-            <h2>Entre em Contato!</h2>
-
-            <div class="content-contacts">
-
-                <div class="col-a">
+        </div>
+        <div id="ctt">
+            <h2>Entre em Contato</h2>
+            <div>
+                <div>
                     <h3>Formas de Contato</h3>
-                    <div class="toMobile">
                         <div class="contact-box">
-                            <a href="https://api.whatsapp.com/send/?phone=5522992533137" target="_blank"><img src="assets/images/WhatsApp Logo.png" alt="WhatsApp Logo"></a>
+                            <a href="https://api.whatsapp.com/send/?phone=5522992533137" target="_blank"><img
+                                    src="src/images/WhatsApp Logo.png" alt="WhatsApp Logo"></a>
                         </div>
                         <div class="contact-box">
-                            <a href="https://www.linkedin.com/in/deivsoares-dev/"
-                                target="_blank"><img src="assets/images/LinkedIn Logo.png" alt="LinkedIn Logo"></a>
+                            <a href="https://www.linkedin.com/in/deivsoares-dev/" target="_blank"><img
+                                    src="src/images/LinkedIn Logo.png" alt="LinkedIn Logo"></a>
                         </div>
                         <div class="contact-box">
-                            <a href="mailto:deivisonsoares1610@outlook.com" target="_blank"><img src="assets/images/Outlook Logo.png" alt="Outlook Logo"></a>
+                            <a href="mailto:deivisonsoares1610@outlook.com" target="_blank"><img
+                                    src="src/images/Outlook Logo.png" alt="Outlook Logo"></a>
                         </div>
 
                         <div class="content-github-link">
                             <h3>Visite meu GitHub</h3>
                             <div class="contact-box">
-                                <a href="https://github.com/DeivSoares" target="_blank"><img src="assets/images/GitHub Logo.png" alt="GitHub Logo"></a>
+                                <a href="https://github.com/DeivSoares" target="_blank"><img
+                                        src="src/images/GitHub Logo.png" alt="GitHub Logo"></a>
                             </div>
                         </div>
-                    </div>
                 </div>
 
-                <div class="col-c">
+                <div>
                     <p>OU</p>
                 </div>
 
@@ -320,25 +276,42 @@
                     <input type="hidden" name="accessKey" value="8f72f5f8-0317-4ed7-a8e3-fd329de7fec5">
                     <input type="hidden" name="redirectTo" value="https://deivsoares.github.io/Portfolio/index.html">
                     <label for="inome">Seu Nome:</label>
-                    <input type="text" name="name" id="inome" required>
+                    <input type="text" name="name" id="inome" required="">
                     <label for="iemail">Seu endereço de email:</label>
-                    <input type="email" name="email" id="iemail" required>
+                    <input type="email" name="email" id="iemail" required="">
                     <label for="imsg">Digite sua mensagem:</label>
-                    <textarea name="message" id="imsg" cols="30" rows="10" required></textarea>
+                    <textarea name="message" id="imsg" cols="30" rows="10" required=""></textarea>
                     <input type="submit" value="Enviar">
                 </form>
 
             </div>
-        </section>
-        <footer>
-            <img src="assets/images/deivsoares.PNG" alt="Logo">
-            <p><a href="https://www.linkedin.com/in/deivsoares-dev/" target="_blank">Deivison Soares</a>
-                Copyright © 2022.</p>
-            <p>Todos os direitos reservados.</p>
-        </footer>
-    </main>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/theme.js"></script>
+        </div>
+    </section>
+    <footer>
+        <img src="src/images/deivsoares.PNG" alt="Logo">
+        <p><a href="https://www.linkedin.com/in/deivsoares-dev/" target="_blank">Deivison Soares</a>
+            Copyright © 2023.</p>
+        <p>Todos os direitos reservados.</p>
+    </footer>
+
+    <div class="flexlist-div">
+        <h1>MENU</h1>
+        <ul id="flexlist-mobile">
+            <li><a href="#nav">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#ctt">Contato</a></li>
+            <li>
+                <button class="theme" onclick="LightMode()">
+                    <img class="lampada" src="src/images/lampada-acesa.svg" alt="">
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <script src="src/js/script.js"></script>
+    <script src="src/js/theme.js"></script>
 </body>
 
 </html>
