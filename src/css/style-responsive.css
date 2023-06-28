@@ -43,9 +43,14 @@
 
   body section div:nth-child(3) div div:first-child {
     flex-direction: row;
+    width: 100%;
   }
   body section div:nth-child(3) div div:first-child h3 {
     display: none;
+  }
+
+  body section div:nth-child(3) div div:first-child img {
+    width: 4rem;
   }
 
   form {
@@ -79,7 +84,7 @@
     width: 30%;
   }
 
-  button.theme{
+  button.theme {
     top: 8%;
     left: 80%;
   }
