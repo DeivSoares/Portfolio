@@ -2,8 +2,8 @@ let themebutton = document.querySelectorAll('button.theme')
 let lampada = document.querySelectorAll('img.lampada')
 
 window.onload = function () {
-    for (let i = 0; i <= themebutton.length; i++) {
-        themebutton[i].setAttribute("onclick", "LightMode()")
+    for (let i = 1; i <= themebutton.length; i++) {
+        themebutton[i].setAttribute('onclick', "LightMode()")
     }
 }
 
@@ -66,7 +66,7 @@ function DarkMode() {
 }
 
 function ChangeTheme() {
-    for (let count = 0; count <= themebutton.length; count++) {
+    for (let count = 1; count <= themebutton.length; count++) {
         let target = themebutton[count].getAttribute('onclick')
         if (target == 'DarkMode()') {
             themebutton[count].setAttribute('onclick', "LightMode()")
