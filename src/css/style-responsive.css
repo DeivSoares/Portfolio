@@ -89,3 +89,26 @@
     left: 80%;
   }
 }
+
+@media (min-width: 1260px) and (max-width: 1980px) {
+  body header {
+    gap: 4rem;
+  }
+
+  body header div.about {
+    width: calc(85% - 20rem);
+  }
+
+  body div table {
+    width: 60%;
+  }
+  body section div:nth-child(3) div {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1260px) {
+  body section div:nth-child(3) div {
+    width: 85%;
+  }
+}
