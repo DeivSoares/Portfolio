@@ -16,7 +16,7 @@ function LightMode() {
         fontLightColor = 'black',
         tableBg = '#60cdef',
         tableHead = '#2e51b1',
-        nameFooter = '#60cdef'
+        nameFooter = '#60cde4f'
     ]
 
     document.documentElement.style.setProperty('--first-bg', roots[0])
